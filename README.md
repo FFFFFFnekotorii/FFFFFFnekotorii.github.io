@@ -1,1 +1,1 @@
-# Number Theory Calculator
+# UwU
